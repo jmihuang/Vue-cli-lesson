@@ -29,10 +29,11 @@ export default{
   <TodoInput @submit="addItem"/>
   <ul>
     <TodoItem 
-      v-for="(todo,idx) in todos" 
-      :todo="todo"
+      v-for="(item,idx) in todos" 
+      :data="item"
+      :key="idx"
       @click.native="remove(idx)"
-    />
+    ></TodoItem >
   </ul>
 </div>
 </template>

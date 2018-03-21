@@ -1,8 +1,8 @@
 <template>
-  <li>{{todo}}</li>
+  <li>{{data}}</li>
 </template>
 <script>
   export default{
-    props:['todo']
+    props:['data']
   }
 </script>
