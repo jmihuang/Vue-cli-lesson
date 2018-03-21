@@ -1,8 +1,15 @@
 <template>
   <div id="app">
-    <h2>範例</h2>
-    <router-link to="/todos">To Do List</router-link>
-    <router-view/>
+  <div class="sidebar">
+      <h2>範例</h2>
+      <li> <router-link to="/todos">To Do List</router-link></li>
+      <li><router-link to="/products/18">Product</router-link></li>
+      <li><router-link to="/about">About</router-link></li>      
+      <li><router-link to="/info">Information</router-link></li>      
+  </div>
+  <div class="content">
+     <router-view/>
+  </div>
   </div>
 </template>
 
@@ -20,5 +27,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.sidebar{
+  width:30%;
+  float:left;
+}
+.content{
+  width:70%;
+  float:right;
 }
 </style>

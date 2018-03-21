@@ -33,7 +33,8 @@ export default{
       :data="item"
       :key="idx"
       @click.native="remove(idx)"
-    ></TodoItem >
+    >
+    </TodoItem >
   </ul>
 </div>
 </template>
