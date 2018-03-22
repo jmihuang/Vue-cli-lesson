@@ -58,9 +58,9 @@ export default new Router({
           ]
         },
         {
-          path: 'getParams/:id?',
+          path: 'getParams',
           component: GetParams,
-          props: true
+          props: { id: 18 }
         },
         {
           path: 'redirect',
