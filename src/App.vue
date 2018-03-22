@@ -6,6 +6,7 @@
       <li><router-link to="/products/18">Product</router-link></li>
       <li><router-link to="/about">About</router-link></li>      
       <li><router-link to="/info">Information</router-link></li>      
+      <li><router-link to="/getParams/18">getParams</router-link></li>      
   </div>
   <div class="content">
      <router-view/>

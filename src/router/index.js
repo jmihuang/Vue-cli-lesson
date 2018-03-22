@@ -12,6 +12,7 @@ import InfoHome from '@/components/InfoHome'
 import InfoAddress from '@/components/InfoAddress'
 import InfoTel from '@/components/InfoTel'
 import InfoMember from '@/components/InfoMember'
+import GetParams from '@/components/GetParams'
 
 Vue.use(Router)
 
@@ -31,6 +32,7 @@ export default new Router({
         },
         {
           path: 'about',
+          alias: 'asloabout',
           component: About,
           children: [
             { path: '', component: AboutHome },
@@ -54,6 +56,25 @@ export default new Router({
               }
             }
           ]
+        },
+        {
+          path: 'getParams/:id?',
+          component: GetParams,
+          props: true
+        },
+        {
+          path: 'redirect',
+          redirect: '/Info/tel'
+        },
+        {
+          path: '/admin',
+          redirect: (from) => {
+            return { name: 'address' };
+          }
+        },
+        {
+          path: '*',
+          redirect: { name: 'home' }
         }
       ]
     },
