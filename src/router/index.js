@@ -17,6 +17,7 @@ import GetParams from '@/components/GetParams'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '',
@@ -27,7 +28,7 @@ export default new Router({
           component: Todos
         },
         {
-          path: 'products/:id',
+          path: 'products/:id?',
           component: Products
         },
         {

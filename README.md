@@ -34,3 +34,6 @@ redirect,alias
 
 [組件的props來取得params](./getParams/18)
 不是用$route組件 取得params的方式 有三種方法 見history
+
+[組件的props來取得params](./getParams/18)
+不是用$route組件 取得params的方式 有三種方法 見history
