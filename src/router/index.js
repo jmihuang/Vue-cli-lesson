@@ -60,7 +60,11 @@ export default new Router({
         {
           path: 'getParams',
           component: GetParams,
-          props: { id: 18 }
+          props: (route) => {
+            return {
+              id: 30
+            }
+          }
         },
         {
           path: 'redirect',
