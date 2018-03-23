@@ -13,11 +13,18 @@ import InfoAddress from '@/components/InfoAddress'
 import InfoTel from '@/components/InfoTel'
 import InfoMember from '@/components/InfoMember'
 import GetParams from '@/components/GetParams'
+import Spa from '@/components/Spa'
+import SpaCourses from '@/components/SpaCourses'
+import SpaAbout from '@/components/SpaAbout'
+import SpaReservation from '@/components/SpaReservation'
+import CourseList from '@/components/CourseList'
+import CourseDetail from '@/components/CourseDetail'
+
+
 
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
   routes: [
     {
       path: '',
@@ -66,6 +73,22 @@ export default new Router({
               id: 30
             }
           }
+        },
+        {
+          path: 'spa',
+          component: Spa,
+          children: [
+            { path: '', component: SpaAbout },
+            { path: 'about', component: SpaAbout },
+            {
+              path: 'courses', component: CourseList,
+              children: [
+                { path: '', component: CourseList },
+                { path: ':id?', component: CourseDetail },
+              ]
+            },
+            { path: 'reservation', component: SpaReservation }
+          ]
         },
         {
           path: 'redirect',
