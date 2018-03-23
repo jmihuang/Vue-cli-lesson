@@ -1,6 +1,6 @@
 <template>
     <div>
       <h1>SpaCourses</h1>
-      <router-view/>
+     <router-view/>
     </div>
 </template>

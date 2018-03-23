@@ -81,10 +81,10 @@ export default new Router({
             { path: '', component: SpaAbout },
             { path: 'about', component: SpaAbout },
             {
-              path: 'courses', component: CourseList,
+              path: 'courses', component: SpaCourses,
               children: [
                 { path: '', component: CourseList },
-                { path: ':id?', component: CourseDetail },
+                { path: ':id', component: CourseDetail },
               ]
             },
             { path: 'reservation', component: SpaReservation }
