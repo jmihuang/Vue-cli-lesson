@@ -38,7 +38,7 @@ export default {
   methods:{
     imgStyle(img){
       return {
-        backgroundImage: `url('${img}')`,
+        backgroundImage: `url(${img})`,
       };
     },
   },

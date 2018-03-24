@@ -37,3 +37,6 @@ redirect,alias
 
 [組件的props來取得params](./getParams/18)
 不是用$route組件 取得params的方式 有三種方法 見history
+
+[Spa route 範例練習](./spa)
+動態綁定圖片需要使用import image 或export image 並使用絕對路徑（教學是用相對路徑但出不來 待解）
